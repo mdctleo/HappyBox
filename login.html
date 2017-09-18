@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HappyBox Login</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body><br>
+    <div class="container-fluid">
+      <h1>Happy Box</h1>
+      <h2>Log In</h2><br>
+      <form method="post" action="login.php">
+        Username: <br>
+        <input class="input-box" type="text" placeholder="Enter your username" name="formUsername">
+        <br><br>
+        Password: <br>
+        <input class="input-box" type="password" placeholder="Enter your password" name="formPassword">
+        <br>
+        <label class="checkbox"> 
+        <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me</label>
+        <input class="input-button" type="submit" name="loginForm" value="Log In">
+      </form>
+    </div>
+  </body>
+</html>

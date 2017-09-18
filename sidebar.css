@@ -1,0 +1,13 @@
+body {
+    background-image: url("http://www.publicdomainpictures.net/pictures/50000/velka/mosaic-tiles-background-blue.jpg");
+    text-align: center;
+}
+
+div.listings {
+    margin: 20px 0 20px 0;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    width:50%;
+    margin: auto;
+}

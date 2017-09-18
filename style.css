@@ -1,0 +1,64 @@
+body {
+    background-image: url("http://www.publicdomainpictures.net/pictures/50000/velka/mosaic-tiles-background-blue.jpg");
+    text-align: center;
+}
+
+div.container-fluid {
+    margin: 20px 0 20px 0;
+    padding: 20px;
+	background-color: #ffffff;
+    border-radius: 8px;
+	width: 312px;
+	margin: auto;
+}
+
+input.input-box {
+    width: 256px;
+    height: 48px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #f8f8f8;
+    text-align: left;
+    color: #444444;
+    padding: 8px;
+}
+
+input.input-box2 {
+    width: 256px;
+    height: 48px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: pink;
+    text-align: left;
+    color: #444444;
+    padding: 8px;
+}
+
+input.input-button {
+    width: 212px;
+    height: 48px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #ddd;
+    text-align: center;
+    color: #444444;
+}
+a {
+    width: 212px;
+    height: 48px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #ddd;
+    text-align: center;
+    color: #444444;
+    padding: 4px 8px 4px 8px;
+}
+
+form {
+	font-size: 16px;
+}
+
