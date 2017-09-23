@@ -27,17 +27,22 @@ if ($conn->connect_error){
 	die("Connection failed: " . $conn->connect_error);
 }
 
-$itemID = $conn->insert_id;
 $itemBy = $_SESSION['ID'];
 $itemByName = $_SESSION['credential'];
 
 $sql = "INSERT INTO UserItems (ItemContent, ItemBy, ItemByName, status, CommBox)
 VALUES ('$ItemContent', '$itemBy', '$itemByName', 0, '$community')";
-$url = 'landing.php';
+
+$conn->query($sql);
+
+$itemID = $conn->insert_id;
+
+$sql = "INSERT INTO Possession (UserID, ItemID)
+		VALUES ('$itemBy','$itemID')";
 
 
 if ($conn->query($sql) === TRUE){
-	header( "Location: $url" );
+	header('Location: landing.php');
 }   else {
 	echo "Error: " . $sql . "<br>" . $conn->error;
 }

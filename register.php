@@ -22,10 +22,9 @@ $conn = new mysqli($servername, $serverUsername, $serverPassword, $dbname);
 if ($conn->connect_error){
 	die("Connection failed: " . $conn->connect_error);
 }
-$userID = $conn->insert_id;
 
-$sql = "INSERT INTO Users (UserID, Email, UserName, Password, Privilege)
-VALUES ($userID, '$email', '$username', '$password', 0)";
+$sql = "INSERT INTO Users (Email, UserName, Password, Privilege)
+VALUES ('$email', '$username', '$password', 0)";
 
 if ($conn->query($sql) === TRUE){
 	$conn->close();
@@ -34,8 +33,6 @@ if ($conn->query($sql) === TRUE){
 	echo "Error: " . $sql . "<br>" . $conn->error;
 	$conn->close();
 }
-
-$conn->close();
 
 
 
